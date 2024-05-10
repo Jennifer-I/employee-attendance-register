@@ -57,9 +57,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                     .gender(employeeRequestDto.getGender())
                     .phoneNumber(employeeRequestDto.getPhoneNumber())
                     .build();
-
             Employee savedEmployee = employeeRepository.save(newEmployee);
-            log.info("employee saved successfully with id: {} {}", savedEmployee.getId(), savedEmployee.getFirstName());
 
             log.info("creating employee response dto");
             return new EmployeeResponseDto(savedEmployee);
@@ -170,8 +168,6 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return employeePage;
     }
-
-
 
 
 }

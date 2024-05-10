@@ -1,5 +1,6 @@
 package com.jennifer.dto.response;
 
+import com.jennifer.enums.Gender;
 import com.jennifer.model.Employee;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,9 +21,12 @@ public class EmployeeResponseDto {
         this.lastName = employee.getLastName();
         this.email = employee.getEmail();
         this.phoneNumber = employee.getPhoneNumber();
-        this.gender = employee.getGender().toString();
-        this.employeeType = employee.getEmployeeType().toString();
-        this.departmentName = employee.getDepartment().getDepartmentName();
+        this.gender = employee.getGender() != null ? employee.getGender().toString() : "Unknown";
+        this.employeeType = employee.getEmployeeType() != null ? employee.getEmployeeType().toString() : "Unknown";
+        this.departmentName = employee.getDepartment() != null ? employee.getDepartment().getDepartmentName() : "Unknown";;
     }
+
+
 }
+
 

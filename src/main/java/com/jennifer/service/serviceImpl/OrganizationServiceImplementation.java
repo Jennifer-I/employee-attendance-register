@@ -20,8 +20,6 @@ public class OrganizationServiceImplementation implements OrganizationService {
 
 
 
-
-
     @Override
     public OrganizationResponseDto createOrganization(OrganizationRequestDto organizationRequestDto) throws CustomException {
         try {

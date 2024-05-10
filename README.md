@@ -1,6 +1,6 @@
 ## Employee attendance register
 ### Description
-This is a simple employee attendance register system that allows employees to clock in and out of work.
+This is a simple employee attendance register system that allows employees to Sign in, Sign out and also register Sick Leave.
 ### Endpoints 
 * POST http://localhost:1980/api/employee/createEmployee
 * POST http://localhost:1980/api/employee/login
@@ -102,7 +102,9 @@ mvn spring-boot:run
 mvn test
 ```
 
-## To access Api documentation 
+### To access Api documentation please view the link below on the browser
 ```shell
+https://documenter.getpostman.com/view/28997317/2sA3JM7M7u
+```
 
 

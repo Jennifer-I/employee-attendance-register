@@ -12,7 +12,6 @@ import com.jennifer.repository.EmployeeRepository;
 import com.jennifer.service.AttendanceRecordService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -27,7 +26,7 @@ import java.util.List;
 public class AttendanceRecordServiceImplementation implements AttendanceRecordService {
     private final EmployeeRepository employeeRepository;
     private final AttendanceRepository attendanceRepository;
-    private final ModelMapper modelMapper;
+
 
 
 

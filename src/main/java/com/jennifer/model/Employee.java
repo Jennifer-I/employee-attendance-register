@@ -42,10 +42,14 @@ public class Employee {
             this.lastName = lastName;
             this.email = email;
             this.phoneNumber = phoneNumber;
-            this.password = password;
             this.employeeType = employeeType;
+            this.password = password;
         }
 
-        public Employee(long l, String firstName, String lastName , String mail,String password , EmployeeType employeeType, Gender gender, Department department) {
-        }
+
+    public Employee(long l, String firstName, String lastname, String email, String s, EmployeeType employeeType, Gender gender, Department department) {
+    }
+
+    public Employee(long l, String jennifer, String ije, String mail, String s, String string, Gender gender, Department department) {
+    }
 }

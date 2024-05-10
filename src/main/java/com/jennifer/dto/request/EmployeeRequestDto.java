@@ -49,8 +49,6 @@ public class EmployeeRequestDto {
     private String password;
 
 
-
-
-    public EmployeeRequestDto( String firstName, String lastName, String email, String phoneNumber, EmployeeType employeeType,   Long departmentId,Gender gender,String password) {
+    public EmployeeRequestDto(String firstName, String lastName, String email, String phoneNumber, EmployeeType employeeType, Long departmentId, Gender gender, String s) {
     }
 }

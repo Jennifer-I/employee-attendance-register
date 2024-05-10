@@ -12,6 +12,7 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Slf4j
@@ -54,6 +55,7 @@ public class DepartmentServiceImpl implements DepartmentService {
             throw new CustomException("Failed to create department due to database error", ex);
         }
     }
+
 
 
 
