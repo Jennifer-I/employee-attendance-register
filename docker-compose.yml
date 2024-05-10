@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  employee-attendance-register:
+    image: employee-attendance-register-image
+    container_name: employee-attendance-register-container
+    ports:
+      - "1981:8081"
+
+  db:
+    image: postgres:latest
+    container_name: postgres-container
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_DB=employee-attendance
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=02468
