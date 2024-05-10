@@ -39,8 +39,7 @@ class EmployeeServiceImplTest {
 
     @Mock
     private DepartmentRepository departmentRepository;
-    @Mock
-    OrganizationRepository organizationRepository;
+
 
     @InjectMocks
     private EmployeeServiceImpl employeeService;
@@ -121,6 +120,8 @@ class EmployeeServiceImplTest {
         assertEquals(expectedEmployee.getLastName(), result.getLastName());
         assertEquals(expectedEmployee.getPhoneNumber(), result.getPhoneNumber());
     }
+
+
 
 
 }
